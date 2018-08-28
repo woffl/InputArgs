@@ -195,7 +195,7 @@ class ExecCommand(sublime_plugin.WindowCommand, ProcessListener):
             hide_phantoms_only=False,
             word_wrap=True,
             syntax="Packages/Text/Plain text.tmLanguage",
-            query_input_args=False,
+            ask_input_args=False,
             # Catches "path" and "shell"
             **kwargs):
 
@@ -267,7 +267,7 @@ class ExecCommand(sublime_plugin.WindowCommand, ProcessListener):
             self.debug_text += "[path: " + str(os.environ["PATH"]) + "]"
 
         # Show input args panel
-        if query_input_args:
+        if ask_input_args:
             v = self.window.show_input_panel("Input Args", "", functools.partial(self.fun, cmd, shell_cmd, merged_env), None, None)
             v.settings().set('InputArgsInputPanel', True)
         else:
