@@ -39,6 +39,6 @@ While the input dialog is open, you can use the up and down arrow keys to scroll
 
 ## Credits and license
 
-Thank you to the authors of Sublime Text for making such a beautiful text editor with such a powerful plugin API. Thank you, [bilalba](/bilalba), for making the original InputArgs and sharing its source.
+Thank you to the authors of Sublime Text for making such a beautiful text editor with such a powerful plugin API. Thank you, [bilalba](https://github.com/bilalba), for making the original InputArgs and sharing its source.
 
 Most of the code in this repository is either a copy from the original exec.py included in Sublime Text or a copy from the original InputArgs plugin. I hereby put the few lines that I contributed myself in the public domain.
